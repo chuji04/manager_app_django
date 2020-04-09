@@ -1,0 +1,21 @@
+プロジェクト作成
+django-admin startproject manager_project
+
+アプリ作成
+python manage.py startapp manager
+
+
+サーバ実行
+python manage.py runserver
+
+マイグレーション(setting.py内のINSTALLED_APPSを参照する)
+models.py変更
+↓
+python manage.py makemigrations polls
+↓
+python manage.py migrate
+
+path()関数
+path('', views.index, name='index')
+引数route：省略不可
+引数view：省略不可
